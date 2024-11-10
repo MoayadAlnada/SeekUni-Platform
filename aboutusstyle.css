@@ -1,0 +1,106 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--dl-color-theme-neutral-dark);
+    background-color: #987f01;
+
+}
+
+/* Header */
+header {
+    background-color: #004080;
+    padding: 1rem 2rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffa500;
+}
+
+header nav ul li a.active {
+    color: #ffa500;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    background-color: #FBF9EF;
+}
+
+/* About Us Section */
+.about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #004080;
+    animation: fade-in-left 1s ease-in-out;
+}
+
+.about-us p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about-us h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #002b5e;
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+}
+
+.about-us ul li strong {
+    color: #004080;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
