@@ -100,19 +100,18 @@ st.markdown("""
 # CSV file path
 file_path = "universities.csv"
 
-# OpenAI client setup
+
 try:
-    # client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY")) # Use environment variable
-    client = OpenAI(api_key="YOUR_OPENAI_API_KEY_HERE") # Replace with your key
+    client = OpenAI(api_key="YOUR_OPENAI_API_KEY_HERE") 
 except Exception as e:
     st.error(f"OpenAI API Key not found or invalid: {e}")
     st.stop()
 
-# Store chat history in session state
+
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# Function to interact with OpenAI
+
 def ask_ai_about_search(data, query):
     """Interact with OpenAI to process the search query."""
     data_summary = f"Columns: {', '.join(data.columns)}"
